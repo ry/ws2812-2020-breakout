@@ -47,17 +47,6 @@ F 3 "http://www.peace-corp.co.jp/data/WS2812-2020_V1.0_EN.pdf" H 6100 4150 50  0
 	1    6250 3950
 	1    0    0    -1  
 $EndComp
-$Comp
-L LED:WS2812-2020 D4
-U 1 1 5DD3CD57
-P 7300 3950
-F 0 "D4" H 7317 4315 50  0000 C CNN
-F 1 "WS2812-2020" H 7317 4224 50  0000 C CNN
-F 2 "LED_SMD:WS2812-2020-2.00mmx2.20mm" H 7150 4150 50  0001 C CNN
-F 3 "http://www.peace-corp.co.jp/data/WS2812-2020_V1.0_EN.pdf" H 7150 4150 50  0001 C CNN
-	1    7300 3950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4550 3850 4450 3850
 Wire Wire Line
@@ -96,27 +85,9 @@ Wire Wire Line
 Wire Wire Line
 	6800 3850 7000 3850
 Wire Wire Line
-	4550 3450 5600 3450
-Wire Wire Line
-	5600 3450 5600 3850
-Wire Wire Line
 	5600 3850 5500 3850
 Wire Wire Line
-	4550 3450 4550 3850
-Wire Wire Line
-	6650 3450 6650 3850
-Wire Wire Line
 	6650 3850 6550 3850
-Connection ~ 5600 3450
-Wire Wire Line
-	6650 3450 7700 3450
-Wire Wire Line
-	7700 3450 7700 3850
-Wire Wire Line
-	7700 3850 7600 3850
-Connection ~ 6650 3450
-Wire Wire Line
-	5600 3450 6650 3450
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5DD51DC0
@@ -128,6 +99,16 @@ F 3 "~" H 3200 4050 50  0001 C CNN
 	1    3200 4050
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	3850 4050 3750 4050
+Wire Wire Line
+	4800 4300 3750 4300
+Wire Wire Line
+	3750 4300 3750 4050
+Connection ~ 4800 4300
+Connection ~ 3750 4050
+Wire Wire Line
+	3750 4050 3400 4050
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 5DD5269B
@@ -139,27 +120,52 @@ F 3 "~" H 8250 3950 50  0001 C CNN
 	1    8250 3950
 	1    0    0    -1  
 $EndComp
+$Comp
+L LED:WS2812-2020 D4
+U 1 1 5DD3CD57
+P 7300 3950
+F 0 "D4" H 7317 4315 50  0000 C CNN
+F 1 "WS2812-2020" H 7317 4224 50  0000 C CNN
+F 2 "LED_SMD:WS2812-2020-2.00mmx2.20mm" H 7150 4150 50  0001 C CNN
+F 3 "http://www.peace-corp.co.jp/data/WS2812-2020_V1.0_EN.pdf" H 7150 4150 50  0001 C CNN
+	1    7300 3950
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	7600 4050 8050 4050
+	5600 3450 6650 3450
 Wire Wire Line
-	7700 3850 8050 3850
+	6650 3450 6650 3850
 Wire Wire Line
-	8050 3850 8050 3950
-Connection ~ 7700 3850
+	4550 3450 4550 3850
 Wire Wire Line
-	3850 4050 3750 4050
+	5600 3450 5600 3850
+Connection ~ 5600 3450
 Wire Wire Line
-	3400 3950 3750 3950
+	4550 3450 5600 3450
 Wire Wire Line
-	3750 3950 3750 3850
+	3850 3850 3750 3850
 Wire Wire Line
-	3750 3850 3850 3850
+	3750 3850 3750 3200
 Wire Wire Line
-	4800 4300 3750 4300
+	3750 3200 7950 3200
 Wire Wire Line
-	3750 4300 3750 4050
-Connection ~ 4800 4300
-Connection ~ 3750 4050
+	7950 3200 7950 3950
 Wire Wire Line
-	3750 4050 3400 4050
+	7950 3950 8050 3950
+Wire Wire Line
+	8050 4050 7600 4050
+Wire Wire Line
+	6650 3450 7700 3450
+Wire Wire Line
+	7700 3450 7700 3850
+Wire Wire Line
+	7700 3850 7600 3850
+Connection ~ 6650 3450
+Wire Wire Line
+	4550 3450 3600 3450
+Wire Wire Line
+	3600 3450 3600 3950
+Wire Wire Line
+	3600 3950 3400 3950
+Connection ~ 4550 3450
 $EndSCHEMATC
