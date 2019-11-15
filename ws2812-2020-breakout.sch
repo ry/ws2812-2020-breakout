@@ -1,0 +1,165 @@
+EESchema Schematic File Version 4
+LIBS:ws2812-2020-breakout-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED:WS2812-2020 D1
+U 1 1 5DD38BD1
+P 4150 3950
+F 0 "D1" H 4167 4315 50  0000 C CNN
+F 1 "WS2812-2020" H 4167 4224 50  0000 C CNN
+F 2 "LED_SMD:WS2812-2020-2.00mmx2.20mm" H 4000 4150 50  0001 C CNN
+F 3 "http://www.peace-corp.co.jp/data/WS2812-2020_V1.0_EN.pdf" H 4000 4150 50  0001 C CNN
+	1    4150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812-2020 D2
+U 1 1 5DD39655
+P 5200 3950
+F 0 "D2" H 5217 4315 50  0000 C CNN
+F 1 "WS2812-2020" H 5217 4224 50  0000 C CNN
+F 2 "LED_SMD:WS2812-2020-2.00mmx2.20mm" H 5050 4150 50  0001 C CNN
+F 3 "http://www.peace-corp.co.jp/data/WS2812-2020_V1.0_EN.pdf" H 5050 4150 50  0001 C CNN
+	1    5200 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812-2020 D3
+U 1 1 5DD3CD51
+P 6250 3950
+F 0 "D3" H 6267 4315 50  0000 C CNN
+F 1 "WS2812-2020" H 6267 4224 50  0000 C CNN
+F 2 "LED_SMD:WS2812-2020-2.00mmx2.20mm" H 6100 4150 50  0001 C CNN
+F 3 "http://www.peace-corp.co.jp/data/WS2812-2020_V1.0_EN.pdf" H 6100 4150 50  0001 C CNN
+	1    6250 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812-2020 D4
+U 1 1 5DD3CD57
+P 7300 3950
+F 0 "D4" H 7317 4315 50  0000 C CNN
+F 1 "WS2812-2020" H 7317 4224 50  0000 C CNN
+F 2 "LED_SMD:WS2812-2020-2.00mmx2.20mm" H 7150 4150 50  0001 C CNN
+F 3 "http://www.peace-corp.co.jp/data/WS2812-2020_V1.0_EN.pdf" H 7150 4150 50  0001 C CNN
+	1    7300 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3850 4450 3850
+Wire Wire Line
+	4450 4050 4700 4050
+Wire Wire Line
+	4700 4050 4700 3850
+Wire Wire Line
+	4700 3850 4900 3850
+Wire Wire Line
+	4800 4300 4800 4050
+Wire Wire Line
+	4800 4050 4900 4050
+Wire Wire Line
+	4800 4300 5850 4300
+Wire Wire Line
+	5850 4300 5850 4050
+Wire Wire Line
+	5850 4050 5950 4050
+Wire Wire Line
+	5850 4300 6900 4300
+Wire Wire Line
+	6900 4300 6900 4050
+Wire Wire Line
+	6900 4050 7000 4050
+Connection ~ 5850 4300
+Wire Wire Line
+	5500 4050 5750 4050
+Wire Wire Line
+	5750 4050 5750 3850
+Wire Wire Line
+	5750 3850 5950 3850
+Wire Wire Line
+	6550 4050 6800 4050
+Wire Wire Line
+	6800 4050 6800 3850
+Wire Wire Line
+	6800 3850 7000 3850
+Wire Wire Line
+	4550 3450 5600 3450
+Wire Wire Line
+	5600 3450 5600 3850
+Wire Wire Line
+	5600 3850 5500 3850
+Wire Wire Line
+	4550 3450 4550 3850
+Wire Wire Line
+	6650 3450 6650 3850
+Wire Wire Line
+	6650 3850 6550 3850
+Connection ~ 5600 3450
+Wire Wire Line
+	6650 3450 7700 3450
+Wire Wire Line
+	7700 3450 7700 3850
+Wire Wire Line
+	7700 3850 7600 3850
+Connection ~ 6650 3450
+Wire Wire Line
+	5600 3450 6650 3450
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5DD51DC0
+P 3200 4050
+F 0 "J1" H 3118 3725 50  0000 C CNN
+F 1 "Conn_01x02" H 3118 3816 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3200 4050 50  0001 C CNN
+F 3 "~" H 3200 4050 50  0001 C CNN
+	1    3200 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5DD5269B
+P 8250 3950
+F 0 "J2" H 8330 3942 50  0000 L CNN
+F 1 "Conn_01x02" H 8330 3851 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8250 3950 50  0001 C CNN
+F 3 "~" H 8250 3950 50  0001 C CNN
+	1    8250 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4050 8050 4050
+Wire Wire Line
+	7700 3850 8050 3850
+Wire Wire Line
+	8050 3850 8050 3950
+Connection ~ 7700 3850
+Wire Wire Line
+	3850 4050 3750 4050
+Wire Wire Line
+	3400 3950 3750 3950
+Wire Wire Line
+	3750 3950 3750 3850
+Wire Wire Line
+	3750 3850 3850 3850
+Wire Wire Line
+	4800 4300 3750 4300
+Wire Wire Line
+	3750 4300 3750 4050
+Connection ~ 4800 4300
+Connection ~ 3750 4050
+Wire Wire Line
+	3750 4050 3400 4050
+$EndSCHEMATC
