@@ -2,6 +2,8 @@
 
 ![render](render.png)
 
+![this design was manufactured and works](soldered1.jpeg)
+
 
 Datasheet: http://www.peace-corp.co.jp/data/WS2812-2020_V1.0_EN.pdf
 
